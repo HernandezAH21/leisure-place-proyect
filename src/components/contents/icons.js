@@ -13,7 +13,12 @@ import {
     faGlobeAmericas,
     faUser,
     faHandPointDown,
-    faSmileWink
+    faSmileWink,
+    faTools,
+    faShareAlt,
+    faCheckSquare,
+    faGrinWink
+    
   } from "@fortawesome/free-solid-svg-icons";
 
   import { library } from "@fortawesome/fontawesome-svg-core";
@@ -22,8 +27,10 @@ import {
     return library.add(faTrash, faSignOutAlt, faEdit, faSpinner, 
       faDragon, faTty, faEnvelopeOpenText, faStreetView, 
       faUserNinja, faUnlockAlt, faHandPointRight, faGlobeAmericas, 
-      faUser, faHandPointDown, faSmileWink
-      );
+      faUser, faHandPointDown, faSmileWink, faTools, faShareAlt,
+      faCheckSquare, faGrinWink
+      
+    );
   };
   
   export default Icons;

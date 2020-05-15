@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import WorldBar from "../navbars/world-navbar";
 
 export default class World extends Component {
   constructor(props) {
@@ -12,7 +14,7 @@ export default class World extends Component {
   render() {
       return (
           <div>
-              
+              <WorldBar/>
           </div>
       )
   }

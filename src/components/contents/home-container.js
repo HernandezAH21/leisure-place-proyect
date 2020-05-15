@@ -34,20 +34,16 @@ export default class Homecontainer extends Component {
                             episode of your series or movies,
                         <br />
                         <Typist.Delay ms={100} />
-                            photos and selfies,
-                        <br />
-                        <Typist.Delay ms={100} />
                             whatever you need,
                         <br />
                         <Typist.Delay ms={100} />
-                            fast and everything in one place ..
+                            fast and everything in one place ...
                         <br />
                         <Typist.Delay ms={100} />
-                            Click here to build your own leisure place with you Google Account.... <a><FontAwesomeIcon icon="hand-point-right"/></a>
+                            Click here to build your own leisure place with you Google Account...
                         <NavLink exact to="/login" className="logo" activeClassName="nava-link-active">
-                        <button> here!. </button>
-                        </NavLink>                        
-                        <br />
+                            <button> HERE! </button>
+                        </NavLink> 
                     </Typist>
                     </div>
                 </div>

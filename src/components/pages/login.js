@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
 import { NavLink } from 'react-router-dom';
+import Typist from 'react-typist';
 
 import Loginbar from "../navbars/login-navbar";
 import Logosquare from '../../../static/assets/images/simplelogo.jpg';
@@ -46,17 +47,24 @@ export default class Googlelogin extends Component {
       return(
         <div>
           <img src={this.state.user.photoURL} alt={this.state.user.displayName} />
-          <p>Welcome {this.state.user.displayName} now the next step is edit your own 
-          leisure place, just click the next button to start...</p>
-          <NavLink exact to="/profile" className="logo" activeClassName="nava-link-active">
-            <button> Click Me! </button>
-          </NavLink>
-          <button onClick={this.handleLogout}>Sign Off</button>
+          <Typist> <p>Welcome {this.state.user.displayName} now the next step is edit your own 
+            leisure place, just click the next button to start...</p>
+            <NavLink exact to="/profile" className="logo" activeClassName="nava-link-active">
+              <button> Click Me! </button>
+            </NavLink>
+            <button onClick={this.handleLogout}>Sign Off</button>
+            <Typist.Delay ms={500} />
+            <br/>
+          </Typist>
         </div>
       );
     } else {
+      //Si el usario no esta logueado
       return (
-        <button onClick={this.handleAuth}>Sign Here!</button>
+        <div>
+          <h1>Start you Place</h1>
+          <button onClick={this.handleAuth}>Sign Here!</button>
+        </div>
       );
     }
   }
@@ -66,7 +74,6 @@ export default class Googlelogin extends Component {
           <div className="login-square">
             <Loginbar/>
             <img src={Logosquare}/>
-            <h1>Start you Place</h1>
             <div className='google-login'>
                 {this.Loginsuccess()}
             </div>

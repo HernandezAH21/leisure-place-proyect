@@ -1,0 +1,72 @@
+/* .share-wrapper {
+    background: #415068;
+}
+.share-wrapper div {
+    display: none;
+}
+.share-wrapper .toggle,
+.share-wrapper .brand {
+    display: inline-block;
+}
+.share-wrapper .i {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background: #223047;
+    color: white;
+}
+.share-wrapper .i:hover,
+.share-wrapper .i:active {
+    color: #223047;
+    background: white;
+}
+.share-wrapper .brand {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+.share-wrapper a {
+    text-decoration: none;
+}
+.share-wrapper .toggle {
+    padding: 1em;
+    color: black;
+}
+@media (min-width: 48em) {
+    .share-wrapper {
+        display: flex;
+    }
+    .share-wrapper .left,
+    .share-wrapper .right {
+        display: flex;
+        flex: 1;
+    }
+    .share-wrapper .i {
+        width: auto;
+    }
+    .share-wrapper .right {
+        justify-content: flex-end;
+    }
+    .share-wrapper .toggle {
+        display: none;
+    }
+}
+@media (min-width: 48em) {
+    .share-wrapper div {
+        display: flex;
+    }
+}
+@media (max-width: 48em) {
+    .share-wrapper.active .toggle {
+        background: #223047;
+        color: white;
+    }
+    .share-wrapper .brand {
+        text-align: left;
+    }
+    .share-wrapper.active div {
+        display: block;
+    }
+} */

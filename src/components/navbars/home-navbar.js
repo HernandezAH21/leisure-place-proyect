@@ -20,15 +20,6 @@ export default class NavigationBar extends Component {
                         </NavLink>
                     </div>
                 </div>
-
-                <div className="center-side">
-                    <div className="nav-link-wrapper">
-                        <NavLink to="/world" activeClassName="nav-link-active">
-                        <FontAwesomeIcon icon="globe-americas"/> World
-                        </NavLink>
-                    </div> 
-                </div>  
-
             </div>     
         );
     }

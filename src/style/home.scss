@@ -1,0 +1,37 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to left, #CD3249 0%, $charcoal 100%);
+
+    .information-text {
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 31px;
+        border: 1px solid $charcoal;
+        border-radius: 7px;
+        width: 458px;
+        background: linear-gradient(to right, #CD3249 0%, #EC7777 100%);
+        text-align: center;
+
+        button {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            width: 75px;
+            height: 34px;
+            border-radius: 10px;
+            background-color: #CD3249;
+            color: $offwhite;
+            border: 2px solid #1b1e24;
+
+            &:hover {
+                color: $offwhite;
+            } 
+            
+            &:hover {
+                color: $coolred;
+              }          
+        }
+    }
+}

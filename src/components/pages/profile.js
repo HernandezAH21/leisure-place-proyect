@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProfileBar from "../navbars/profile-navbar";
+import Profilecontainer from "../contents/profile-container";
 
 export default class Profile extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export default class Profile extends Component {
       return (
           <div>
               <ProfileBar/>
+              <Profilecontainer/>
           </div>
       )
   }

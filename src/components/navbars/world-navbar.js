@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../../../static/assets/images/logo2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default class ProfileBar extends Component {
+export default class WorldBar extends Component {
     constructor() {
       super();
     } 
