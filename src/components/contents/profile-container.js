@@ -35,23 +35,12 @@ export default class Profilecontainer extends Component {
 
     return (
       <div className="portfolio-items-wrapper">
-        <button className="btn" onClick={() => this.handleFilter("Movies")}>
-          Movies
-        </button>
-        <button className="btn" onClick={() => this.handleFilter("Series")}>
-          Series
-        </button>
-        <button className="btn" onClick={() => this.handleFilter("Video Games")}>
-          Video Games
-        </button>
-        <button className="btn" onClick={() => this.handleFilter("Music")}>
-          Music
-        </button>
-        <button className="btn" onClick={() => this.handleFilter("Shop´s")}>
-          Shop´s
-        </button>
-
-
+          <button className="btn" onClick={() => this.handleFilter("CLEAR_FILTERS")}>All</button>
+          <button className="btn" onClick={() => this.handleFilter("Movies")}>Movies</button>
+          <button className="btn" onClick={() => this.handleFilter("Series")}> Series</button>
+          <button className="btn1" onClick={() => this.handleFilter("Video Games")}>Video Games</button>
+          <button className="btn" onClick={() => this.handleFilter("Music")}>Music</button>
+          <button className="btn" onClick={() => this.handleFilter("Shop´s")}>Shop´s</button>
         {this.portfolioItems()}
       </div>
     );

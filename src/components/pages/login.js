@@ -3,7 +3,6 @@ import firebase from 'firebase';
 import { NavLink } from 'react-router-dom';
 import Typist from 'react-typist';
 
-import Loginbar from "../navbars/login-navbar";
 import Logosquare from '../../../static/assets/images/simplelogo.jpg';
 
 export default class Googlelogin extends Component {
@@ -15,7 +14,6 @@ export default class Googlelogin extends Component {
 
     this.handleAuth = this.handleAuth.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
-    // this.renderLoginButton = this.renderLoginButton.bind(this);
     this.Loginsuccess = this.Loginsuccess.bind(this);
 
   }
@@ -45,24 +43,31 @@ export default class Googlelogin extends Component {
     // Si el usuario esta logueado
     if(this.state.user) {
       return(
-        <div>
+        <div className="signin-wrapper">
           <img src={this.state.user.photoURL} alt={this.state.user.displayName} />
-          <Typist> <p>Welcome {this.state.user.displayName} now the next step is edit your own 
-            leisure place, just click the next button to start...</p>
+            <Typist> 
+            <p>Welcome {this.state.user.displayName} 
+            <Typist.Delay ms={500} />
+            <br/>
+             now the next step is 
+            <Typist.Delay ms={500} />
+            <br/>
+            edit your own leisure place, 
+            <Typist.Delay ms={500} />
+            <br/>
+            just click the next button to start...</p>
             <NavLink exact to="/profile" className="logo" activeClassName="nava-link-active">
               <button> Click Me! </button>
             </NavLink>
             <button onClick={this.handleLogout}>Sign Off</button>
-            <Typist.Delay ms={500} />
-            <br/>
           </Typist>
         </div>
       );
     } else {
-      //Si el usario no esta logueado
-      return (
-        <div>
-          <h1>Start you Place</h1>
+        return (
+        <div className="login-wrapper">
+          <img src={Logosquare}/>
+          <p>Start you Place</p>
           <button onClick={this.handleAuth}>Sign Here!</button>
         </div>
       );
@@ -72,11 +77,7 @@ export default class Googlelogin extends Component {
   render() {
         return (
           <div className="login-square">
-            <Loginbar/>
-            <img src={Logosquare}/>
-            <div className='google-login'>
                 {this.Loginsuccess()}
-            </div>
           </div>
         );
     }

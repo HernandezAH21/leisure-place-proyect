@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Typist from 'react-typist';
 import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export default class Homecontainer extends Component {

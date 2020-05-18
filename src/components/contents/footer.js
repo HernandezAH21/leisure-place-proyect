@@ -13,7 +13,7 @@ export default class FooterBar extends Component {
                         Share this page with all your friends in any social network that you want.
                     </div>
                     <div className="social-link-wrapper">
-                        <a href="https://www. facebook.com">
+                        <a href="https://es-la.facebook.com/">
                             <i className="fab fa-facebook-f fa-2x"></i>
                         </a>
  

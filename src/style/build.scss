@@ -1,0 +1,52 @@
+.setting-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to left, #CD3249 0%, $charcoal 100%);
+
+    button {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #CD3249;
+        color: $offwhite;
+        border: 2px solid #1b1e24;
+        margin-right: 10px;
+
+        &:hover {
+            color: $offwhite;
+        } 
+        
+        &:hover {
+            color: $coolred;
+        }          
+    }
+
+    .one-column, 
+    .two-column, 
+    .three-column {
+        font-family: inherit;
+        color: $charcoal;
+        padding: 5px 0px;
+        width: 100%;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-bottom: 1px solid $middle-red;
+        background-color: transparent;
+        transition: 0.5s all ease-in-out;
+        font-size: 1.1em;
+        margin-bottom: 21px;
+        grid-template-columns: 1fr;
+        padding: 42px;
+        
+        &:focus {
+          outline: none;
+          border-bottom: 1px solid $coolred;
+        }
+    }
+
+}

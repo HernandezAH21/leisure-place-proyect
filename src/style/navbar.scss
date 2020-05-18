@@ -7,6 +7,7 @@
 
   .right-side {
     display: flex;
+    margin-top: 8px;
 
     a {
       margin-left: 15px;
@@ -22,10 +23,11 @@
   .left-side {
     display: flex;
     padding: 10px;
-    
-    .left-side img {
+
+    img {
       display: grid;
-      width: 5px;
+      margin-top: -15px;
+      width: 300px;
     }
   }
 

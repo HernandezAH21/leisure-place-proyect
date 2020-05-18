@@ -30,11 +30,11 @@ export default class ProfileBar extends Component {
                             <FontAwesomeIcon icon="tools"/> Build the Place
                         </NavLink>
                     </div>
-                    <div className="nav-link-wrapper">
+                    {/* <div className="nav-link-wrapper">
                         <NavLink to="/world" activeClassName="nav-link-active">
                         <FontAwesomeIcon icon="globe-americas"/> World
                         </NavLink>
-                    </div> 
+                    </div>  */}
                 </div>  
 
             </div>     

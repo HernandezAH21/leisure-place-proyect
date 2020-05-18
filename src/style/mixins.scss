@@ -1,0 +1,53 @@
+@mixin base-btn {
+    cursor: pointer;
+    height: 42px;
+    font-size: 1em;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    background-color: $coolred;
+    color: $offwhite;
+  
+    &:active, &:focus {
+      outline: none;
+    }
+  
+    &:hover {
+      background-color: $middle-red;
+    }
+}
+
+@mixin input-element {
+  input {
+    font-family: 'Open Sans', sans-serif;
+    color: $offwhite;
+    padding: 5px 0px;
+    width: 100%;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid $middle-red;
+    background-color: transparent;
+    transition: 0.5s all ease-in-out;
+    font-size: 1.1em;
+    margin-bottom: 21px;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $coolred;
+    }
+  }
+}
+
+@mixin base-grid() {
+  display: grid;
+  grid-gap: 21px;
+}
+
+@mixin base-page {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to left, #CD3249 0%, $charcoal 100%);
+}
